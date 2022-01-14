@@ -66,21 +66,21 @@ public class TypeTest
         x = 45;
     }
 
-    Book GetBook(string name){
-        return new Book(name);
+    InMemoryBook GetBook(string name){
+        return new InMemoryBook(name);
     }
 
-    public void SetNameBook(Book book, string name){
+    public void SetNameBook(InMemoryBook book, string name){
         book.Name = name;        
     }
 
-    public void GetBookSetName(ref Book book,string name)
+    public void GetBookSetName(ref InMemoryBook book,string name)
     {
-        book = new Book(name);
+        book = new InMemoryBook(name);
     }
 
-    public void GetBookSetName(Book book, string name)
+    public void GetBookSetName(InMemoryBook book, string name)
     {
-        book = new Book(name);
+        book = new InMemoryBook(name);
     }
 }
